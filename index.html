@@ -6,6 +6,17 @@
     <style>
         .highlight { background-color: yellow; }
         .container { padding: 20px; border: 1px solid #ccc; }
+
+    .completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -35,6 +46,14 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
+        <section>
+    <h2>Task List</h2>
+    
+    <input type="text" id="task-input" placeholder="New task">
+    <button id="add-task">Add Task</button>
+    
+    <ul id="task-list"></ul>
+</section>
     </main>
     
     <footer>
