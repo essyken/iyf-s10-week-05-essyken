@@ -1,0 +1,177 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    width: 400px;
+    max-width: 90%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+#todo-input:focus {
+    border-color: #667eea;
+}
+
+/* Add Button */
+form button {
+    padding: 10px 15px;
+    border: none;
+    background: #667eea;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: #5a67d8;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.filter {
+    flex: 1;
+    margin: 0 3px;
+    padding: 8px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.filter:hover {
+    background: #ddd;
+}
+
+.filter.active {
+    background: #667eea;
+    color: white;
+}
+
+/* Todo List */
+#todo-list {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+.todo-item:hover {
+    background: #f9f9f9;
+}
+
+/* Completed Task */
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Toggle (text click area) */
+.toggle {
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Delete Button */
+.delete {
+    background: transparent;
+    border: none;
+    color: #e53e3e;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delete:hover {
+    color: #c53030;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Clear Completed Button */
+#clear-completed {
+    border: none;
+    background: #e53e3e;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#clear-completed:hover {
+    background: #c53030;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
