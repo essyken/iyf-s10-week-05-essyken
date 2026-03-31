@@ -1,8 +1,8 @@
 Week 5: DOM Manipulation
 ## Author
-**ESTHER WANJIRU NJOROGE**
-**essyken** https://github.com/essyken
-**March 31st, 2026**
+- **ESTHER WANJIRU NJOROGE**
+- **essyken** https://github.com/essyken
+- **March 31st, 2026**
 
 📋 Repository: iyf-s10-week-05-essyken
 
